@@ -2,7 +2,7 @@
 
 Dit is de opdrachtrepository voor de module **OOSE Deeltijd** (Object-Oriented Software Engineering), studiejaar 2026/2027. Je werkt in teamverband aan een casus die over beide blokken loopt: **SAD** (Software Analysis & Design, blok 1) en **DAD** (Distributed Application Development, blok 2). Deze repository fork of clone je (binnen de GitHub-organisatie [aim-oose-dt](https://github.com/aim-oose-dt)) om met de casus te starten.
 
-> De casus bestaat uit beroepsproductdelen B_Casus1 (SAD) en B_Casus2 (DAD). S_Toets1 is een schriftelijke toets in week 9. S_Toets2 is een online ANS-toets die later wordt opengesteld.
+> De casus bestaat uit beroepsproductdelen B_Casus1 (SAD) en B_Casus2 (DAD).
 
 ## De opdracht
 

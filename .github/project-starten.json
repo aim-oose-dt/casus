@@ -1,0 +1,130 @@
+{
+  "labels": [
+    { "name": "werkpakket", "color": "1D76DB", "description": "Werkpakket voor de casus" },
+    { "name": "SAD", "color": "0E8A16", "description": "Software Analysis & Design" },
+    { "name": "DAD", "color": "B60205", "description": "Distributed Application Development" }
+  ],
+  "milestones": [
+    { "title": "System Interaction Modeling", "dueOn": "2026-09-28T23:59:59Z" },
+    { "title": "Domain Modeling", "dueOn": "2026-10-12T23:59:59Z" },
+    { "title": "Software Design Modeling", "dueOn": "2026-11-02T23:59:59Z" },
+    { "title": "Software Design Practices", "dueOn": "2026-11-02T23:59:59Z" },
+    { "title": "Patterns of Enterprise Application Architecture", "dueOn": "2026-12-21T23:59:59Z" },
+    { "title": "Run-time Environment of Distributed Applications", "dueOn": "2027-01-25T23:59:59Z" },
+    { "title": "Software Design Improvement", "dueOn": "2027-02-01T23:59:59Z" }
+  ],
+  "issues": [
+    {
+      "title": "Bepaal systeemgrenzen",
+      "description": "Identificeer het systeem als blackbox en breng de externe partijen (actoren, bronsystemen) in kaart.",
+      "targetDate": "2026-09-14",
+      "milestone": "System Interaction Modeling",
+      "labels": ["werkpakket", "SAD"]
+    },
+    {
+      "title": "Maak use case diagram",
+      "description": "Stel een use case diagram op met minimaal 10 use cases, waarvan maximaal 65% CRUD mag zijn.",
+      "targetDate": "2026-09-21",
+      "milestone": "System Interaction Modeling",
+      "labels": ["werkpakket", "SAD"]
+    },
+    {
+      "title": "Werk hoofd-use-cases uit",
+      "description": "Beschrijf de belangrijkste use cases met hoofdscenario en alternatieve paden.",
+      "targetDate": "2026-09-28",
+      "milestone": "System Interaction Modeling",
+      "labels": ["werkpakket", "SAD"]
+    },
+    {
+      "title": "Stel domeinmodel op",
+      "description": "Maak een domeinmodel met minimaal 10 concepten uit het probleemdomein en hun relaties.",
+      "targetDate": "2026-10-05",
+      "milestone": "Domain Modeling",
+      "labels": ["werkpakket", "SAD"]
+    },
+    {
+      "title": "Valideer domeinmodel met use cases",
+      "description": "Controleer of het domeinmodel de concepten uit de use cases dekt.",
+      "targetDate": "2026-10-12",
+      "milestone": "Domain Modeling",
+      "labels": ["werkpakket", "SAD"]
+    },
+    {
+      "title": "Maak class diagram",
+      "description": "Stel een statisch OO-ontwerp op als class diagram met gemotiveerde ontwerpbeslissingen.",
+      "targetDate": "2026-10-19",
+      "milestone": "Software Design Modeling",
+      "labels": ["werkpakket", "SAD"]
+    },
+    {
+      "title": "Maak sequence diagrams",
+      "description": "Maak dynamische modellen (sequence diagrams) voor de kern-use-cases.",
+      "targetDate": "2026-10-26",
+      "milestone": "Software Design Modeling",
+      "labels": ["werkpakket", "SAD"]
+    },
+    {
+      "title": "Lever ontwerpdocument op",
+      "description": "Leg de ontwerpmodellen en -beslissingen vast in een overdraagbaar ontwerpdocument.",
+      "targetDate": "2026-11-02",
+      "milestone": "Software Design Modeling",
+      "labels": ["werkpakket", "SAD"]
+    },
+    {
+      "title": "Pas design patterns toe",
+      "description": "Pas relevante OO-principes en patterns zoals Strategy, Factory Method of Template Method toe in het ontwerp en de uitwerking.",
+      "targetDate": "2026-11-02",
+      "milestone": "Software Design Practices",
+      "labels": ["werkpakket", "SAD"]
+    },
+    {
+      "title": "Pas distribution patterns toe",
+      "description": "Implementeer Remote Facade / Service Layer voor de distributie van de applicatie.",
+      "targetDate": "2026-11-30",
+      "milestone": "Patterns of Enterprise Application Architecture",
+      "labels": ["werkpakket", "DAD"]
+    },
+    {
+      "title": "Implementeer REST-services",
+      "description": "Ontkoppel presentatie- en domeinlaag via RESTful services.",
+      "targetDate": "2026-12-07",
+      "milestone": "Patterns of Enterprise Application Architecture",
+      "labels": ["werkpakket", "DAD"]
+    },
+    {
+      "title": "Pas data source patterns toe",
+      "description": "Implementeer Table Data Gateway of vergelijkbaar patroon in de datalaag.",
+      "targetDate": "2026-12-14",
+      "milestone": "Patterns of Enterprise Application Architecture",
+      "labels": ["werkpakket", "DAD"]
+    },
+    {
+      "title": "Pas web presentation patterns toe",
+      "description": "Implementeer een presentatielaag-patroon voor de front-end.",
+      "targetDate": "2026-12-21",
+      "milestone": "Patterns of Enterprise Application Architecture",
+      "labels": ["werkpakket", "DAD"]
+    },
+    {
+      "title": "Bouw gedistribueerde applicatie",
+      "description": "Ontwikkel de applicatie met de gekozen APIs, frameworks en libraries.",
+      "targetDate": "2027-01-18",
+      "milestone": "Run-time Environment of Distributed Applications",
+      "labels": ["werkpakket", "DAD"]
+    },
+    {
+      "title": "Deploy op applicatieserver",
+      "description": "Deploy de applicatie over de gekozen deployment-tiers en demonstreer de communicatie tussen de componenten.",
+      "targetDate": "2027-01-25",
+      "milestone": "Run-time Environment of Distributed Applications",
+      "labels": ["werkpakket", "DAD"]
+    },
+    {
+      "title": "Verbeter bestaand ontwerp",
+      "description": "Verbeter een bestaand OO-ontwerp op consistentie met de specificatie.",
+      "targetDate": "2027-02-01",
+      "milestone": "Software Design Improvement",
+      "labels": ["werkpakket", "DAD"]
+    }
+  ]
+}

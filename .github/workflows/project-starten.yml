@@ -1,0 +1,23 @@
+name: Project starten
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  project-starten:
+    name: Maak milestones en issues
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repository ophalen
+        uses: actions/checkout@v4
+
+      - name: Projectplanning aanmaken
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const startProject = require(`${process.env.GITHUB_WORKSPACE}/.github/scripts/project-starten.js`);
+            await startProject({ github, context, core });

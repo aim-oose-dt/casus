@@ -12,6 +12,7 @@ Je kiest als team tussen twee opties:
 2. Een **eigen casus** die voldoet aan de generieke eisen.
 
 > Oorspronkelijke opdracht in Brightspace: https://leren.han.nl/d2l/home/110865
+>
 > - ICDE-casus: https://leren.han.nl/d2l/le/lessons/110865/topics/895841
 > - Eigen casus (eisen): https://leren.han.nl/d2l/le/lessons/110865/topics/895844
 
@@ -41,11 +42,11 @@ In plaats van talloze losse Word- en Excel-bestanden bouw je een systeem dat de 
 - data die direct bruikbaar is voor nieuwe aanpakken zoals Iterative Grading, waarbij transparantie en de groei van de student centraal staan;
 - vereenvoudigd delen van onderwijsonderdelen tussen opleidingen en profielen;
 - flexibiliteit in formaten, algemene ontwerpaanpak en uitbreidbaarheid, zodat het HAN-breed inzetbaar is;
-- koppeling op termijn met andere systemen, zoals onderwijsonline (genereren en plaatsen van OWE-beschrijvingen) of Alluris (eindbeoordelingen volgens rubrics overnemen, inclusief onderbouwing).
+- koppeling op termijn met andere systemen, zoals een leeromgeving (genereren en plaatsen van modulebeschrijvingen) of een studentinformatiesysteem (eindbeoordelingen volgens rubrics overnemen, inclusief onderbouwing).
 
 ### De opdracht (deliverables)
 
-Maak een analyse en leg deze vast in een requirements-specificatie. Ontwerp het systeem volgens die specificatie en realiseer een prototype dat aantoont dat de belangrijkste requirements gerealiseerd (kunnen) worden. Toon van alle onderdelen aan dat ze van voldoende kwaliteit zijn. De beoordelingscriteria staan op onderwijsonline.
+Maak een analyse en leg deze vast in een requirements-specificatie. Ontwerp het systeem volgens die specificatie en realiseer een prototype dat aantoont dat de belangrijkste requirements gerealiseerd (kunnen) worden. Toon van alle onderdelen aan dat ze van voldoende kwaliteit zijn. Gebruik de actuele beoordelingscriteria in de Brightspace-omgeving van SAD of DAD, passend bij het casusdeel dat je laat beoordelen.
 
 > Je mag op elk moment tijdens de uitvoering onderdelen laten beoordelen, mits je (1) duidelijk aangeeft op welke criteria je welk niveau denkt te halen (zie rubrics), en (2) onderbouwt waarom, met een link naar die onderbouwing. Zonder onderbouwing geen beoordeling.
 
@@ -70,17 +71,63 @@ Je mag ook een eigen casus ontwerpen. Deze moet voldoen aan de volgende eisen:
 - Neem een voorlopig lijstje concepten op als quickstart voor het domeinmodel, inclusief hun samenhang: meer samenhang betekent meer kans dat het samenwerkende klassen worden.
 - Overleg met de docenten over de technologie. Java is de OOSE-huisstijl, maar C#, TypeScript of Python mag ook, mits je de OOSE-ontwerpprincipes en patterns kunt toepassen.
 
-## Werkwijze
+## Werkwijze GitHub-repo
 
-Maak een issue-board in GitHub (Issues + Milestones). De milestones en issues zijn te importeren uit `Milestones-Issues-OOSE-DT.csv` (in deze map). Koppel je teamleden aan de issues. Onderbouw de kwaliteit per criterium.
+![Fork de casusrepository op GitHub](img/fork-casus-repository.png)
+
+Voor een docent is het prettig als de namen van de studenten direct in de repo-naam staan. Daarom plaatsen we de studentnamen vooraan, gevolgd door de naam van de casus. Gebruik duidelijke, consistente naamgeving met kleine letters en streepjes, zodat de repository eenvoudig, leesbaar en makkelijker te herkennen is voor zowel docent als beoordelaar.
+
+Een goede naamgeving ziet er als volgt uit:
+
+casus-abdullah-ali-smart-charging-scheduler
+casus-jan-jansen-maria-van-der-berg-smart-charging-scheduler
+casus-<voornaam>-<achternaam>-<student-2>-<student-3>-<casusnaam>
+Gebruik altijd kleine letters en streepjes in plaats van spaties, underscores of hoofdletters. Dit maakt de naam beter leesbaar, beter compatibel met verschillende platforms en consistent met gangbare conventies voor URL- en repo-namen. De prefix casus- maakt direct duidelijk dat het om een casusopdracht gaat.
+
+Bij het opzetten van de repository geldt het volgende:
+
+Maak een nieuwe repository aan, tenzij er een duidelijke reden is om te forken. Geef de repo een naam volgens het patroon: `casus-<student1>-<student-2>-<student-3>-<casusnaam>`.
+
+Bijvoorbeeld `casus-john-gert-jan-deborah-icde` of `casus-alice-yusuf-bert-slimme-kledingkast`
+
+Voeg teamgenoten direct toe als collaborators.
+Pas de README.md meteen aan en vul deze volledig in voor het eigen project.
+
+Houd de naamgeving consistent gedurende het project, zodat links, beoordeling en begeleiding eenvoudig blijven.
+Deze werkwijze is niet alleen praktisch voor docenten, maar ook voor de lange termijn: korte, duidelijke en goed leesbare repo-namen helpen bij overzicht, vindbaarheid en professionele communicatie.
+
+Laat de startplanning automatisch aanmaken nadat de repository vanuit deze template is gemaakt. Hiervoor bevat de repository een handmatig startbare GitHub Actions-workflow. Deze wordt niet bij iedere commit uitgevoerd en gebruikt alleen Actions-minuten wanneer iemand hem bewust start.
+
+1. Open in GitHub het tabblad **Actions**.
+2. Kies de workflow **Project starten**.
+3. Klik rechts op **Run workflow**.
+4. Laat de standaardbranch geselecteerd en klik in het geopende venster nogmaals op **Run workflow**.
+5. Open de workflowrun en wacht tot **Maak milestones en issues** groen is.
+6. Controleer daarna de aangemaakte Issues, Labels en Milestones.
+
+De knop **Run workflow** is beschikbaar zodra de workflow op de standaardbranch staat. Je hebt schrijfrechten op de repository nodig om hem te starten. Staat er bij de eerste keer openen van **Actions** een knop om workflows in te schakelen, schakel GitHub Actions dan eerst in.
+
+De workflow maakt de startissues en bijbehorende milestones aan. Bestaande issues en milestones worden bij een nieuwe uitvoering overgeslagen. Pas daarna de planning aan jullie casus aan:
+
+- wijs teamleden toe via **Assignees**;
+- vul de acceptatiecriteria en kwaliteitsonderbouwing per issue aan;
+- pas de streefdata in de issue-tekst en de deadlines van milestones aan op jullie planning;
+- houd de voortgang zichtbaar via een GitHub Projects-board.
 
 ## Bijlagen
 
 - `sad/casus-opdracht.md` — EVL-beschrijving en leeruitkomsten
 - `sad/toetsing/beoordelingscriteria casus.xlsx` — beoordelingscriteria
 - `sad/assets/OOSE DT Casus ICDE.docx` — volledige ICDE-casusbeschrijving
-- `meta/Milestones-Issues-OOSE-DT.csv` — importeerbare milestones/issues
 
 ---
 
-> De ICDE casus versie 0.1 (05-07-2017) is van Christian Köppe en Rody Middelkoop.
+## Bronnen
+
+- Cutts, M. (2011, 22 november). *Underscores vs. dashes in URLs [Video]*.* YouTube. https://www.youtube.com/watch?v=AQcSFsQyct8
+
+- Google. (z.d.). *URL structure.* In Google Search Central. https://developers.google.com/search/docs/crawling-indexing/url-structure
+
+Microsoft. (z.d.). *Cross-platform compatibility. In Azure Repos documentation*. https://learn.microsoft.com/en-us/azure/devops/repos/git/os-compatibility
+
+Province of British Columbia. (z.d.). *Naming repositories. In GitHub*. https://github.com/bcgov/BC-Policy-Framework-For-GitHub/blob/master/BC-Gov-Org-HowTo/Naming-Repos.md
